@@ -1,9 +1,11 @@
 package com.gld.ncs;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.mybatis.spring.annotation.MapperScan;
+        import org.springframework.boot.SpringApplication;
+        import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan("com.gld.ncs.dao")
 public class NcsApplication {
 
     public static void main(String[] args) {

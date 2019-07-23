@@ -19,7 +19,7 @@ public class NormDBController {
     }
 
     @RequestMapping(value = "/normDBs/", method = RequestMethod.DELETE)
-    public  void deleteNormDB(@PathVariable("id") String id) {
+    public  void deleteNormDB(String id) {
     }
 
 }
