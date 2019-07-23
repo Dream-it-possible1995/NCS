@@ -12,6 +12,7 @@ public class LMMDetail {
 
     private int lmmdetailId;
     private int normitemId;
+    private String lmmdetailKind;
     private String lmmdetailCode;
     private String lmmdetailName;
     private String lmmdetailType;
@@ -34,6 +35,10 @@ public class LMMDetail {
     public void setNormitemId(int normitemId) {
         this.normitemId = normitemId;
     }
+
+    public String getLmmdetailKind() { return lmmdetailKind; }
+
+    public void setLmmdetailKind(String lmmdetailKind) { this.lmmdetailKind = lmmdetailKind; }
 
     public String getLmmdetailCode() {
         return lmmdetailCode;

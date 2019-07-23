@@ -18,7 +18,7 @@ public class NormDBController {
 
     // GET http://localhost:8080/api/v1/normDBs
     @RequestMapping(value = "/normDBs", method = RequestMethod.GET)
-    public List<NormDB> getNormDB() {
+    public List<NormDB> getNormDBs() {
             return normDBDao.selectNormDBs();
         }
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gld.ncs.dao.SectionDao">
+    <resultMap id="sectionMap" type="com.gld.ncs.model.Section">
+        <result property="sectionId" column="section_id"/>
+        <result property="normdbId" column="normdb_id"/>
+        <result property="sectionName" column="section_name"/>
+        <result property="sectionPid" column="section_pid"/>
+        <result property="sectionSid" column="section_sid"/>
+    </resultMap>
+
+    <select id="selectSectionsByNormDBId" resultMap="sectionMap">
+        select * from section where normdb_id = #{normdbId}
+    </select>
+
+</mapper>
