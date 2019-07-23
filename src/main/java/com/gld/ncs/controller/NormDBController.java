@@ -1,25 +1,24 @@
 package com.gld.ncs.controller;
 
-import org.springframework.http.HttpStatus;
+import com.gld.ncs.dao.NormDBDao;
+import com.gld.ncs.model.NormDB;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1")
 public class NormDBController {
 
-    @RequestMapping(value = "/normDBs/", method = RequestMethod.GET)
-    public void getNormDB() {
-    }
+    @Autowired
+    private NormDBDao normDBDao;
 
-    // POST http://localhost:8080/api/v1/normDBs
-    @RequestMapping(value = "/normDBs/", method = RequestMethod.POST)
-    public void addNormDB() {
-    }
-
-    @RequestMapping(value = "/normDBs/", method = RequestMethod.DELETE)
-    public  void deleteNormDB(String id) {
-    }
-
+    // GET http://localhost:8080/api/v1/normDBs
+    @RequestMapping(value = "/normDBs", method = RequestMethod.GET)
+    public List<NormDB> getNormDB() {
+            return normDBDao.selectNormDBs();
+        }
 }
