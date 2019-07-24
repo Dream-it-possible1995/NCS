@@ -20,9 +20,7 @@ public class NormItem {
     private BigDecimal normitemPNTMaterial;
     private BigDecimal normitemPNTMachine;
 
-    public int getNormitemId() {
-        return normitemId;
-    }
+    public int getNormitemId() { return normitemId; }
 
     public void setNormitemId(int normitemId) {
         this.normitemId = normitemId;

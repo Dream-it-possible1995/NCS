@@ -13,5 +13,8 @@
     <select id="selectSectionsByNormDBId" resultMap="sectionMap">
         select * from section where normdb_id = #{normdbId}
     </select>
+    <select id="selectSectionsBySectionSid" resultMap="sectionMap">
+        select * from section where section_sid = #{sectionSid}
+    </select>
 
 </mapper>

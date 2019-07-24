@@ -1,9 +1,7 @@
 package com.gld.ncs.controller;
 
 import com.gld.ncs.dao.LMMDetailDao;
-import com.gld.ncs.dao.NormItemDao;
 import com.gld.ncs.model.LMMDetail;
-import com.gld.ncs.model.NormItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

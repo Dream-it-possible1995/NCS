@@ -12,4 +12,5 @@ import java.util.List;
 
 public interface SectionDao {
     List<Section> selectSectionsByNormDBId(int normdbId);
+    List<Section> selectSectionsBySectionSid(int sectionSid);
 }
