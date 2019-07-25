@@ -5,12 +5,12 @@
  */
 
 
-package com.gld.ncs.dao;
+package com.gld.ncs.mapper;
 
-import com.gld.ncs.model.LMMDetail;
+import com.gld.ncs.entity.LMMDetail;
 
 import java.util.List;
 
-public interface LMMDetailDao {
+public interface LMMDetailMapper {
     List<LMMDetail> selectLMMDetailByNormItemId(int normItemId);
 }

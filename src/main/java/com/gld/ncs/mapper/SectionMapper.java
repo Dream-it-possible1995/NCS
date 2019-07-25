@@ -4,13 +4,13 @@
  *获取章节目录
  */
 
-package com.gld.ncs.dao;
+package com.gld.ncs.mapper;
 
-import com.gld.ncs.model.Section;
+import com.gld.ncs.entity.Section;
 
 import java.util.List;
 
-public interface SectionDao {
+public interface SectionMapper {
     List<Section> selectSectionsByNormDBId(int normdbId);
-    List<Section> selectSectionsBySectionSid(int sectionSid);
+    List<Section> selectSectionsBySectionSid(int sid);
 }

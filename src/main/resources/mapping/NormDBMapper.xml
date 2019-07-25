@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.gld.ncs.dao.NormDBDao">
-    <resultMap id="normdbMap" type="com.gld.ncs.model.NormDB">
-        <result property="normdbId" column="normdb_id"/>
-        <result property="normdbName" column="normdb_name"/>
+<mapper namespace="com.gld.ncs.mapper.NormDBMapper">
+    <resultMap id="normdbMap" type="com.gld.ncs.entity.NormDB">
+        <result property="id" column="normdb_id"/>
+        <result property="name" column="name"/>
     </resultMap>
 
     <select id="selectNormDBs" resultMap="normdbMap">

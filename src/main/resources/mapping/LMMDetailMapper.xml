@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gld.ncs.mapper.LMMDetailMapper">
+    <resultMap id="lmmdetailMap" type="com.gld.ncs.entity.LMMDetail">
+        <result property="id" column="lmmdetail_id"/>
+        <result property="normitemId" column="normitem_id"/>
+        <result property="code" column="code"/>
+        <result property="name" column="name"/>
+        <result property="type" column="type"/>
+        <result property="unit" column="unit"/>
+        <result property="NTBudget" column="NTbudget"/>
+        <result property="budget" column="bugdet"/>
+        <result property="kind" column="kind"/>
+    </resultMap>
+
+    <select id="selectLMMDetailByNormItemId" resultMap="lmmdetailMap">
+        select * from lmmdetail where normitem_id = #{normitemId}
+    </select>
+
+</mapper>

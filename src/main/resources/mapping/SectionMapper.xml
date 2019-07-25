@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.gld.ncs.dao.SectionDao">
-    <resultMap id="sectionMap" type="com.gld.ncs.model.Section">
-        <result property="sectionId" column="section_id"/>
+<mapper namespace="com.gld.ncs.mapper.SectionMapper">
+    <resultMap id="sectionMap" type="com.gld.ncs.entity.Section">
+        <result property="id" column="section_id"/>
         <result property="normdbId" column="normdb_id"/>
-        <result property="sectionName" column="section_name"/>
-        <result property="sectionPid" column="section_pid"/>
-        <result property="sectionSid" column="section_sid"/>
+        <result property="name" column="name"/>
+        <result property="pid" column="pid"/>
+        <result property="sid" column="sid"/>
     </resultMap>
 
     <select id="selectSectionsByNormDBId" resultMap="sectionMap">
         select * from section where normdb_id = #{normdbId}
     </select>
     <select id="selectSectionsBySectionSid" resultMap="sectionMap">
-        select * from section where section_sid = #{sectionSid}
+        select * from section where sid = #{sid}
     </select>
 
 </mapper>

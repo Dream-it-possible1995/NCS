@@ -5,7 +5,7 @@ import org.mybatis.spring.annotation.MapperScan;
         import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.gld.ncs.dao")
+@MapperScan("com.gld.ncs.mapper")
 public class NcsApplication {
 
     public static void main(String[] args) {

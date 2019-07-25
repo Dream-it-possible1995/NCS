@@ -4,12 +4,12 @@
  *获取定额条目明细
  */
 
-package com.gld.ncs.dao;
+package com.gld.ncs.mapper;
 
-import com.gld.ncs.model.NormItem;
+import com.gld.ncs.entity.NormItem;
 
 import java.util.List;
 
-public interface NormItemDao {
+public interface NormItemMapper {
     List<NormItem> selectNormItemBySectionId(int sectionId);
 }
