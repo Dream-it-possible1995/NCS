@@ -6,6 +6,8 @@
 
 package com.gld.ncs.entity;
 
+import java.util.List;
+
 public class Section {
 
     private int id;
@@ -13,6 +15,15 @@ public class Section {
     private int sid;
     private int normdbId;
     private String name;
+    private List<Section> childList;
+
+    public List<Section> getChildList() {
+        return childList;
+    }
+
+    public void setChildList(List<Section> childList) {
+        this.childList = childList;
+    }
 
     public int getId() {
         return id;
